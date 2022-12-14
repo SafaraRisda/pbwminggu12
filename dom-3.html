@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM API Javascript</title>
+  </head>
+  <body>
+    <p class="paragraf">
+      Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. 
+      Kelinci berkembang biak dengan cara beranak yang disebut vivipar.
+      Hewan ini memiliki telinga panjang. Panjang dari kedua telinga dapat mencapai lebih dari 10 cm. 
+      Telinga hewan ini memiliki fungsi untuk mendeteksi munculnya predator yang akan memangsanya. 
+      Kelinci juga memiliki bulu yang halus dan lembut. 
+      Bola matanya cenderung tajam dan indah. Kelinci memiliki kaki-kaki yang sangat kuat.
+    </p>
+    <p class="paragraf">
+      Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. 
+      Kelinci berkembang biak dengan cara beranak yang disebut vivipar.
+      Hewan ini memiliki telinga panjang. Panjang dari kedua telinga dapat mencapai lebih dari 10 cm. 
+      Telinga hewan ini memiliki fungsi untuk mendeteksi munculnya predator yang akan memangsanya. 
+      Kelinci juga memiliki bulu yang halus dan lembut. 
+      Bola matanya cenderung tajam dan indah. Kelinci memiliki kaki-kaki yang sangat kuat.
+    </p>
+    <p class="paragraf">
+      Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. 
+      Kelinci berkembang biak dengan cara beranak yang disebut vivipar.
+      Hewan ini memiliki telinga panjang. Panjang dari kedua telinga dapat mencapai lebih dari 10 cm. 
+      Telinga hewan ini memiliki fungsi untuk mendeteksi munculnya predator yang akan memangsanya. 
+      Kelinci juga memiliki bulu yang halus dan lembut. 
+      Bola matanya cenderung tajam dan indah. Kelinci memiliki kaki-kaki yang sangat kuat.
+    </p>
+    <script>
+      var paragraf = document.getElementsByClassName("paragraf");
+      setInterval(function () {
+        paragraf[0].style.color = "purple";
+        paragraf[1].style.color = "pink";
+        paragraf[2].style.color = "yellow";
+        setTimeout(function () {
+          paragraf[0].style.color = "black";
+          paragraf[1].style.color = "black";
+          paragraf[2].style.color = "black";
+        }, 500);
+      }, 1000);
+    </script>
+  </body>
+</html>
