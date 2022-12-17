@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Belajar Objek Javascript</title>
-  </head>
-  <body>
     <script>
-      var person = {
-        firstName: "Dimas",
-        lastName: "Dirgantara",
-        showName: function () {
-          alert(`Nama: ${this.firstName} ${this.lastName}`);
-        },
-      };
-      var person2 = {
-        firstName: "Belajar",
-        lastName: "Kode",
-        showName: function () {
-          alert(`Nama: ${this.firstName} ${this.lastName}`);
-        },
-      };
+      function Person(firstName, lastName) {
+        // properti
+        this.firstName = firstName;
+        this.lastName = lastName;
+        // method
+        this.fullName = function () {
+          return `${this.firstName} ${this.lastName}`;
+        };
+        this.showName = function () {
+          document.write(this.fullName());
+        };
+      }
+      var person1 = new Person("Agus", "Santoro");
+      var person2 = new Person("Belajar", "Kode");
+      person1.showName();
+      document.write("<br>");
+      person2.showName();
     </script>
-  </body>
+  </head>
+  <body></body>
 </html>
